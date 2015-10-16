@@ -76,6 +76,7 @@ public class Transaction {
 		do{
 			int userChoice = keyboard.nextInt();
 			setChoice(userChoice);
+			escape=1;
 			if((getChoice()<0||getChoice()>4))
 					{
 				System.out.println("Invalid Transaction Choice! Try Again!");
@@ -93,6 +94,19 @@ public class Transaction {
 		int dd = keyboard.nextInt();
 		GregorianCalendar temporaryDate= new GregorianCalendar(yyyy,mm,dd);
 		setTransactionDate(temporaryDate);
+		
+	
+		
+	}
+	
+	public Transaction(int a)
+	{
+		
+		
+		setAmount(0);
+		setChoice(0);
+		
+		setTransactionDate(null);
 		
 	
 		

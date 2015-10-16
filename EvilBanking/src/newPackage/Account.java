@@ -31,7 +31,7 @@ public class Account {
 		setName(keyboard.nextLine());
 		System.out.println("Enter Account Number");
 		setAccountNumber(keyboard.nextLong());
-		System.out.println("Enter the Account Balane");
+		System.out.println("Enter the Account Balance");
 		setAccountBalance(keyboard.nextDouble());
 	}
 	
